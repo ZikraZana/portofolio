@@ -7,10 +7,11 @@
     <title>Profil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
+<body style="background-color: #b1b4b9;">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark opacity-75 p-2 fixed-top" data-bs-theme="dark">
@@ -26,7 +27,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portofolio</a>
+                        <a class="nav-link" href="#portofolio">Portofolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="aboutme.html">About Me</a>
@@ -39,7 +40,7 @@
 
     <!-- Profil -->
     <section class="d-flex justify-content-center align-items-center p-4"
-        style="background-color: #e3e3e3; overflow: hidden;">
+        style="background-color: #63686e; overflow: hidden;">
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6 text-center mx-auto">
@@ -48,30 +49,33 @@
                     <h1 class="mt-3" style="margin-bottom: -4px;">Zikra Zana</h1>
                     <hr class="mx-auto" style="width: 250px; max-width: 100%;">
                     <h4>Web Developer Enthusiast</h4>
-                    <p class="text-muted mt-3">
+                    <h6 class="text-muted mt-3">
                         Saya adalah seorang web developer yang bersemangat dalam mempelajari situs
                         web interaktif dan responsif.
-                    </p>
+                    </h6>
                 </div>
             </div>
         </div>
     </section>
 
-    <svg id="wave" style="margin-top: -5px; margin-bottom: 4rem; transform:rotate(180deg); transition: 0.3s"
-        viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <svg id="wave" style="margin-top: -6px; margin-bottom: 40px;transform:rotate(180deg); transition: 0.3s"
+        viewBox="0 0 1440 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                <stop stop-color="rgba(227, 227, 227, 1)" offset="0%"></stop>
-                <stop stop-color="rgba(227, 227, 227, 1)" offset="100%"></stop>
+                <stop stop-color="rgba(99, 104, 110, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(99, 104, 110, 1)" offset="100%"></stop>
             </linearGradient>
         </defs>
         <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-            d="M0,30L34.3,38.3C68.6,47,137,63,206,58.3C274.3,53,343,27,411,21.7C480,17,549,33,617,48.3C685.7,63,754,77,823,68.3C891.4,60,960,30,1029,25C1097.1,20,1166,40,1234,43.3C1302.9,47,1371,33,1440,26.7C1508.6,20,1577,20,1646,25C1714.3,30,1783,40,1851,45C1920,50,1989,50,2057,48.3C2125.7,47,2194,43,2263,41.7C2331.4,40,2400,40,2469,36.7C2537.1,33,2606,27,2674,23.3C2742.9,20,2811,20,2880,21.7C2948.6,23,3017,27,3086,28.3C3154.3,30,3223,30,3291,31.7C3360,33,3429,37,3497,40C3565.7,43,3634,47,3703,51.7C3771.4,57,3840,63,3909,70C3977.1,77,4046,83,4114,76.7C4182.9,70,4251,50,4320,40C4388.6,30,4457,30,4526,31.7C4594.3,33,4663,37,4731,41.7C4800,47,4869,53,4903,56.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
+            d="M0,36L30,30C60,24,120,12,180,8C240,4,300,8,360,14C420,20,480,28,540,32C600,36,660,36,720,32C780,28,840,20,900,26C960,32,1020,52,1080,56C1140,60,1200,48,1260,38C1320,28,1380,20,1440,32C1500,44,1560,76,1620,86C1680,96,1740,84,1800,72C1860,60,1920,48,1980,46C2040,44,2100,52,2160,52C2220,52,2280,44,2340,52C2400,60,2460,84,2520,96C2580,108,2640,108,2700,94C2760,80,2820,52,2880,46C2940,40,3000,56,3060,54C3120,52,3180,32,3240,30C3300,28,3360,44,3420,58C3480,72,3540,84,3600,88C3660,92,3720,88,3780,80C3840,72,3900,60,3960,60C4020,60,4080,72,4140,82C4200,92,4260,100,4290,104L4320,108L4320,120L4290,120C4260,120,4200,120,4140,120C4080,120,4020,120,3960,120C3900,120,3840,120,3780,120C3720,120,3660,120,3600,120C3540,120,3480,120,3420,120C3360,120,3300,120,3240,120C3180,120,3120,120,3060,120C3000,120,2940,120,2880,120C2820,120,2760,120,2700,120C2640,120,2580,120,2520,120C2460,120,2400,120,2340,120C2280,120,2220,120,2160,120C2100,120,2040,120,1980,120C1920,120,1860,120,1800,120C1740,120,1680,120,1620,120C1560,120,1500,120,1440,120C1380,120,1320,120,1260,120C1200,120,1140,120,1080,120C1020,120,960,120,900,120C840,120,780,120,720,120C660,120,600,120,540,120C480,120,420,120,360,120C300,120,240,120,180,120C120,120,60,120,30,120L0,120Z">
         </path>
     </svg>
     <!-- Profil End -->
 
-    <!-- About -->
+    <!-- Portofolio -->
+    <div id="portofolio">
+        <br><br>
+    </div>
     <div class="container d-flex flex-column justify-content-center align-items-center p-4 mb-4">
         <h2>Portofolio</h2>
         <p>Ini beberapa pengalaman saya yang telah saya jalani</p>
@@ -91,38 +95,84 @@
         </path>
     </svg>
 
-    <section style="background-color: #e3e3e3;">
-
+    <section style="background-color: #63686e;">
         <div class="container">
             <div class="container-fluid gap-5 d-flex justify-content-center align-items-center">
-                <div class="row row-cols-2 w-100">
-                    <div class="col">
-                        <img src="img/Kotlin Knights Team.png" class="img-fluid w-75 mx-auto d-block" alt="">
-                        <p class="text-center mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-                            voluptate perferendis totam amet veniam porro quos quo non! Esse perferendis, totam maiores
-                            dolores odit ea alias facilis voluptates quod sint.</p>
+                <div class="row row-cols-1 row-cols-md-2 w-100">
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card p-4" style="width: 100%; max-width: 24rem; background-color: #b1b4b9;">
+                            <img src="img/Kotlin Knights Team.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">Tim Terbaik 1 Web Programming</h5>
+                                <ul>
+                                    <li>Team Name: Kotlin Knights</li>
+                                    <li>Member :
+                                        <ol>
+                                            <li>Zikra Zana</li>
+                                            <li>Sabrina Wahida Ramadhani</li>
+                                            <li>Muammar Irfan</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img src="img/Kotlin Knights Team.png" class="img-fluid w-75 mx-auto d-block" alt="">
-                        <p class="text-center mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
-                            nesciunt incidunt asperiores delectus dolor eum eius ipsa quasi error voluptas eveniet
-                            corrupti laboriosam harum dolorum tenetur optio tempore soluta assumenda.</p>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card" style="width: 100%; max-width: 24rem; background-color: #b1b4b9;">
+                            <img src="img/Kotlin Knights Team.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">Tim Terbaik 1 Web Programming</h5>
+                                <ul>
+                                    <li>Team Name: Kotlin Knights</li>
+                                    <li>Member :
+                                        <ol>
+                                            <li>Zikra Zana</li>
+                                            <li>Sabrina Wahida Ramadhani</li>
+                                            <li>Muammar Irfan</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img src="img/Kotlin Knights Team.png" class="img-fluid w-75 mx-auto d-block" alt="">
-                        <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel veniam
-                            sequi eos dolorem explicabo autem ipsum repudiandae excepturi fugiat reprehenderit,
-                            veritatis ipsam sed magni ipsa expedita impedit delectus officia nihil?</p>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card" style="width: 100%; max-width: 24rem; background-color: #b1b4b9;">
+                            <img src="img/Kotlin Knights Team.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">Tim Terbaik 1 Web Programming</h5>
+                                <ul>
+                                    <li>Team Name: Kotlin Knights</li>
+                                    <li>Member :
+                                        <ol>
+                                            <li>Zikra Zana</li>
+                                            <li>Sabrina Wahida Ramadhani</li>
+                                            <li>Muammar Irfan</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img src="img/Kotlin Knights Team.png" class="img-fluid w-75 mx-auto d-block" alt="">
-                        <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-                            aliquam, iure molestias dicta temporibus unde minima id quibusdam sunt corrupti maxime enim
-                            ex! Similique quia est odio reprehenderit dignissimos magnam!</p>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <div class="card" style="width: 100%; max-width: 24rem; background-color: #b1b4b9;">
+                            <img src="img/Kotlin Knights Team.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">Tim Terbaik 1 Web Programming</h5>
+                                <ul>
+                                    <li>Team Name: Kotlin Knights</li>
+                                    <li>Member :
+                                        <ol>
+                                            <li>Zikra Zana</li>
+                                            <li>Sabrina Wahida Ramadhani</li>
+                                            <li>Muammar Irfan</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <svg id="wave" style="margin-top: -5px; margin-bottom: 4rem; transform:rotate(180deg); transition: 0.3s"
         viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +186,7 @@
             d="M0,30L34.3,38.3C68.6,47,137,63,206,58.3C274.3,53,343,27,411,21.7C480,17,549,33,617,48.3C685.7,63,754,77,823,68.3C891.4,60,960,30,1029,25C1097.1,20,1166,40,1234,43.3C1302.9,47,1371,33,1440,26.7C1508.6,20,1577,20,1646,25C1714.3,30,1783,40,1851,45C1920,50,1989,50,2057,48.3C2125.7,47,2194,43,2263,41.7C2331.4,40,2400,40,2469,36.7C2537.1,33,2606,27,2674,23.3C2742.9,20,2811,20,2880,21.7C2948.6,23,3017,27,3086,28.3C3154.3,30,3223,30,3291,31.7C3360,33,3429,37,3497,40C3565.7,43,3634,47,3703,51.7C3771.4,57,3840,63,3909,70C3977.1,77,4046,83,4114,76.7C4182.9,70,4251,50,4320,40C4388.6,30,4457,30,4526,31.7C4594.3,33,4663,37,4731,41.7C4800,47,4869,53,4903,56.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
         </path>
     </svg>
-    <!-- About End -->
+    <!-- Portofolio End -->
 
     <!-- Social Media -->
     <svg id="wave" style="margin-bottom: -1px;transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100"
@@ -151,21 +201,21 @@
             d="M0,20L34.3,20C68.6,20,137,20,206,26.7C274.3,33,343,47,411,56.7C480,67,549,73,617,70C685.7,67,754,53,823,50C891.4,47,960,53,1029,48.3C1097.1,43,1166,27,1234,18.3C1302.9,10,1371,10,1440,18.3C1508.6,27,1577,43,1646,53.3C1714.3,63,1783,67,1851,71.7C1920,77,1989,83,2057,85C2125.7,87,2194,83,2263,68.3C2331.4,53,2400,27,2469,15C2537.1,3,2606,7,2674,11.7C2742.9,17,2811,23,2880,25C2948.6,27,3017,23,3086,26.7C3154.3,30,3223,40,3291,41.7C3360,43,3429,37,3497,35C3565.7,33,3634,37,3703,41.7C3771.4,47,3840,53,3909,61.7C3977.1,70,4046,80,4114,83.3C4182.9,87,4251,83,4320,68.3C4388.6,53,4457,27,4526,15C4594.3,3,4663,7,4731,21.7C4800,37,4869,63,4903,76.7L4937.1,90L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
         </path>
     </svg>
-    <section style="background-color: #e3e3e3;">
+    <section style="background-color: #63686e;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
                     <hr>
-                    <h6 class="mb-4">Social Media</h6>
+                    <h3 class="mb-4">Social Media</h3>
                     <div class="d-flex justify-content-center">
                         <a href="#" class="mx-2"><img src="img/facebook_icon.png" alt="Facebook" width="50"
-                                class="mb-3"></a>
+                                class="mb-3 hoover"></a>
                         <a href="#" class="mx-2"><img src="img/Instagram_icon.png" alt="Instagram" width="50"
-                                class="mb-3"></a>
+                                class="mb-3 hoover"></a>
                         <a href="#" class="mx-2"><img src="img/linkedin_icon.png" alt="LinkedIn" width="50"
-                                class="mb-3"></a>
+                                class="mb-3 hoover"></a>
                         <a href="#" class="mx-2"><img src="img/github_icon.png" alt="GitHub" width="50"
-                                class="mb-3"></a>
+                                class="mb-3 hoover"></a>
                     </div>
                     <hr class="mt-4">
                 </div>
