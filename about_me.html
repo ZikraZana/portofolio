@@ -14,6 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Hind+Madurai:wght@300;400;500;600;700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
     <style>
         .poppins-regular {
             font-family: "Poppins", serif;
@@ -26,11 +28,79 @@
             font-weight: 600;
             font-style: normal;
         }
+
+        .lilita-one-regular {
+            font-family: "Lilita One", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .progress-circle {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: conic-gradient(#00d8ff calc(var(--percentage) * 1%), #1f2937 0);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .progress-circle span {
+            position: absolute;
+            font-size: 18px;
+        }
+
+        .progress-circle p {
+            position: absolute;
+            top: 110%;
+            /* Tempatkan di bawah lingkaran */
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .progress-circle::before {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            background-color: #0a0f1d;
+            /* Warna tengah (background lingkaran) */
+            border-radius: 50%;
+        }
+
+
+        @media (max-width: 768px) {
+            .mobile-content {
+                margin-top: 100px !important;
+            }
+            
+            .section-mobile{
+                display: none;
+            }
+            .section-mobile1{
+                margin-top: 50px;
+            }
+        }
+
+        /* Large devices */
+        @media (max-width: 992px) {
+            .mobile-content {
+                margin-top: 20px;
+            }
+            .hr-mobile{
+                width: 300px;
+            }
+        }
     </style>
 
 </head>
 
-<body style="background-color: #d3d6db;" class="poppins-regular">
+<body style="background: #121212;" class="poppins-regular">
 
     <!-- Navbar -->
     <!-- Navbar Desktop-->
@@ -60,15 +130,20 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><img src="img/github_icon.png"
+                        <a class="nav-link active" aria-current="page" href="https://github.com/MonoZikk" target="_blank"><img src="img/github_icon.png"
                                 class="img-fluid rounded-circle" alt="..." width="40px"></a>
+                    </li>
+                    <li class="nav-item">
+                        <svg class="bi" width="70" height="-20px">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Navbar Mobile -->
+    <!-- Navbar Mobile -->>
     <nav class="navbar navbar-expand-lg opacity-75 fixed-top d-block d-lg-none" data-bs-theme="dark"
         style="margin-top: -10px;">
         <div class="container-fluid bg-dark justify-content-center">
@@ -99,194 +174,164 @@
     <!-- end of navbar -->
 
     <!-- Profil -->
-    <section class="d-flex justify-content-center align-items-center p-4"
-        style="background-color: #b1b4b9; overflow: hidden;">
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6 text-center mx-auto">
-                    <img src="img/Foto diri.jpg" class="img-fluid rounded-circle mb-3" alt="Zikra Zana"
-                        style="max-width: 200px; width: 100%;" />
-                    <h1 class="mt-3" style="margin-bottom: -4px;">Zikra Zana</h1>
-                    <hr class="mx-auto" style="width: 250px; max-width: 100%;">
-                    <h4>Web Developer Enthusiast</h4>
-                    <p class="mt-3">
-                        Saya adalah seorang web developer yang bersemangat dalam mempelajari situs
-                        web interaktif dan responsif.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1"
-        xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                <stop stop-color="rgba(177, 180, 185, 1)" offset="0%"></stop>
-                <stop stop-color="rgba(177, 180, 185, 1)" offset="100%"></stop>
-            </linearGradient>
-        </defs>
-        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-            d="M0,10L40,20C80,30,160,50,240,50C320,50,400,30,480,18.3C560,7,640,3,720,16.7C800,30,880,60,960,65C1040,70,1120,50,1200,35C1280,20,1360,10,1440,10C1520,10,1600,20,1680,23.3C1760,27,1840,23,1920,31.7C2000,40,2080,60,2160,60C2240,60,2320,40,2400,36.7C2480,33,2560,47,2640,46.7C2720,47,2800,33,2880,25C2960,17,3040,13,3120,15C3200,17,3280,23,3360,28.3C3440,33,3520,37,3600,36.7C3680,37,3760,33,3840,40C3920,47,4000,63,4080,71.7C4160,80,4240,80,4320,70C4400,60,4480,40,4560,33.3C4640,27,4720,33,4800,30C4880,27,4960,13,5040,6.7C5120,0,5200,0,5280,15C5360,30,5440,60,5520,71.7C5600,83,5680,77,5720,73.3L5760,70L5760,100L5720,100C5680,100,5600,100,5520,100C5440,100,5360,100,5280,100C5200,100,5120,100,5040,100C4960,100,4880,100,4800,100C4720,100,4640,100,4560,100C4480,100,4400,100,4320,100C4240,100,4160,100,4080,100C4000,100,3920,100,3840,100C3760,100,3680,100,3600,100C3520,100,3440,100,3360,100C3280,100,3200,100,3120,100C3040,100,2960,100,2880,100C2800,100,2720,100,2640,100C2560,100,2480,100,2400,100C2320,100,2240,100,2160,100C2080,100,2000,100,1920,100C1840,100,1760,100,1680,100C1600,100,1520,100,1440,100C1360,100,1280,100,1200,100C1120,100,1040,100,960,100C880,100,800,100,720,100C640,100,560,100,480,100C400,100,320,100,240,100C160,100,80,100,40,100L0,100Z">
-        </path>
-    </svg>
-    <!-- Profil End -->
-
-    <!-- Portofolio -->
-    <div id="portofolio">
-        <br><br>
-    </div>
-    <div class="container d-flex flex-column justify-content-center align-items-center p-4 mb-4">
-        <h2>Portofolio</h2>
-        <p>Ini beberapa pengalaman saya yang telah saya jalani</p>
-    </div>
-
-
-    <svg id="wave" style="margin-bottom: -1px;transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100"
-        version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                <stop stop-color="rgba(227, 227, 227, 1)" offset="0%"></stop>
-                <stop stop-color="rgba(227, 227, 227, 1)" offset="100%"></stop>
-            </linearGradient>
-        </defs>
-        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-            d="M0,20L34.3,20C68.6,20,137,20,206,26.7C274.3,33,343,47,411,56.7C480,67,549,73,617,70C685.7,67,754,53,823,50C891.4,47,960,53,1029,48.3C1097.1,43,1166,27,1234,18.3C1302.9,10,1371,10,1440,18.3C1508.6,27,1577,43,1646,53.3C1714.3,63,1783,67,1851,71.7C1920,77,1989,83,2057,85C2125.7,87,2194,83,2263,68.3C2331.4,53,2400,27,2469,15C2537.1,3,2606,7,2674,11.7C2742.9,17,2811,23,2880,25C2948.6,27,3017,23,3086,26.7C3154.3,30,3223,40,3291,41.7C3360,43,3429,37,3497,35C3565.7,33,3634,37,3703,41.7C3771.4,47,3840,53,3909,61.7C3977.1,70,4046,80,4114,83.3C4182.9,87,4251,83,4320,68.3C4388.6,53,4457,27,4526,15C4594.3,3,4663,7,4731,21.7C4800,37,4869,63,4903,76.7L4937.1,90L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
-        </path>
-    </svg>
-
-    <section style="background-color: #b1b4b9;">
-        <!-- #63686e -->
+    <section class="mobile-content d-flex align-items-center p-3 p-md-5 min-vh-100">
         <div class="container">
-            <div class="container-fluid gap-5 d-flex justify-content-center align-items-center">
-                <div class="row row-cols-1 row-cols-md-2 w-100">
-                    <div class="col d-flex justify-content-center mb-4">
-                        <div class="card p-4" style="width: 100%; max-width: 24rem; background-color: #d3d6db;">
-                            <img src="img/OSN Informatika.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="text-center">Juara 5 OSN Informatika Tingkat Kabupaten</h5>
-                                Berkat penghargaan ini, saya semakin tertarik dengan dunia IT dan inilah titik awal saya
-                                terjun ke dunia IT.
-                            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 text-white d-flex justify-content-center align-items-center mb-4 mb-md-0">
+                    <div class="position-relative">
+                        <img src="img/Foto diri.jpg" class="img-fluid rounded-circle shadow-lg" alt="Zikra Zana"
+                            style="max-width: 200px; width: 100%; border: 4px solid #A7C7E7;" />
+                        <div class="position-absolute bottom-0 end-0">
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-center mb-4">
-                        <div class="card p-4" style="width: 100%; max-width: 24rem; background-color: #d3d6db;">
-                            <img src="img/Kotlin Knights Team.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="text-center">Tim Terbaik 1 Web Programming</h5>
-                                Saya sangat bersemangat dengan adanya pemilihan tim terbaik dalam pembuatan website,
-                                saya dan tim sangat bekerja keras dalam memulai project debut untuk pembuatan website
-                                sederhana
-                                <p></p>
-                                <ul>
-                                    <li>Nama Tim: Kotlin Knights</li>
-                                    <li>Anggota :
-                                        <ol>
-                                            <li>Zikra Zana</li>
-                                            <li>Sabrina Wahida Ramadhani</li>
-                                            <li>Muammar Irfan</li>
-                                        </ol>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col d-flex justify-content-center mb-4">
-                        <div class="card p-4" style="width: 100%; max-width: 24rem; background-color: #d3d6db;">
-                            <img src="img/Kotlin Knights Team.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="text-center">Tim Terbaik 1 Web Programming</h5>
-                                <ul>
-                                    <li>Team Name: Kotlin Knights</li>
-                                    <li>Member :
-                                        <ol>
-                                            <li>Zikra Zana</li>
-                                            <li>Sabrina Wahida Ramadhani</li>
-                                            <li>Muammar Irfan</li>
-                                        </ol>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col d-flex justify-content-center mb-4">
-                        <div class="card p-4" style="width: 100%; max-width: 24rem; background-color: #d3d6db;">
-                            <img src="img/Kotlin Knights Team.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="text-center">Tim Terbaik 1 Web Programming</h5>
-                                <ul>
-                                    <li>Team Name: Kotlin Knights</li>
-                                    <li>Member :
-                                        <ol>
-                                            <li>Zikra Zana</li>
-                                            <li>Sabrina Wahida Ramadhani</li>
-                                            <li>Muammar Irfan</li>
-                                        </ol>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
-            </div>
-    </section>
-    <svg id="wave" style="margin-top: -5px; margin-bottom: 4rem; transform:rotate(180deg); transition: 0.3s"
-        viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                <stop stop-color="rgba(227, 227, 227, 1)" offset="0%"></stop>
-                <stop stop-color="rgba(227, 227, 227, 1)" offset="100%"></stop>
-            </linearGradient>
-        </defs>
-        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-            d="M0,30L34.3,38.3C68.6,47,137,63,206,58.3C274.3,53,343,27,411,21.7C480,17,549,33,617,48.3C685.7,63,754,77,823,68.3C891.4,60,960,30,1029,25C1097.1,20,1166,40,1234,43.3C1302.9,47,1371,33,1440,26.7C1508.6,20,1577,20,1646,25C1714.3,30,1783,40,1851,45C1920,50,1989,50,2057,48.3C2125.7,47,2194,43,2263,41.7C2331.4,40,2400,40,2469,36.7C2537.1,33,2606,27,2674,23.3C2742.9,20,2811,20,2880,21.7C2948.6,23,3017,27,3086,28.3C3154.3,30,3223,30,3291,31.7C3360,33,3429,37,3497,40C3565.7,43,3634,47,3703,51.7C3771.4,57,3840,63,3909,70C3977.1,77,4046,83,4114,76.7C4182.9,70,4251,50,4320,40C4388.6,30,4457,30,4526,31.7C4594.3,33,4663,37,4731,41.7C4800,47,4869,53,4903,56.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
-        </path>
-    </svg>
-    <!-- Portofolio End -->
+                <div class="col-12 col-md-6 text-white text-center text-md-start">
+                    <h1 class="display-5 display-md-4 fw-bold mb-2" style="color: #A7C7E7;">Zikra Zana</h1>
+                    <hr class="my-3 mx-auto mx-md-0"
+                        style="width: 250px; max-width: 100%; border-color: #A7C7E7; opacity: 0.5;">
+                    <h4 class="text-light mb-4"><span class="typing-text">Web Developer Enthusiast</span></h4>
 
-    <!-- Social Media -->
-    <svg id="wave" style="margin-bottom: -1px;transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100"
-        version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                <stop stop-color="rgba(227, 227, 227, 1)" offset="0%"></stop>
-                <stop stop-color="rgba(227, 227, 227, 1)" offset="100%"></stop>
-            </linearGradient>
-        </defs>
-        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-            d="M0,20L34.3,20C68.6,20,137,20,206,26.7C274.3,33,343,47,411,56.7C480,67,549,73,617,70C685.7,67,754,53,823,50C891.4,47,960,53,1029,48.3C1097.1,43,1166,27,1234,18.3C1302.9,10,1371,10,1440,18.3C1508.6,27,1577,43,1646,53.3C1714.3,63,1783,67,1851,71.7C1920,77,1989,83,2057,85C2125.7,87,2194,83,2263,68.3C2331.4,53,2400,27,2469,15C2537.1,3,2606,7,2674,11.7C2742.9,17,2811,23,2880,25C2948.6,27,3017,23,3086,26.7C3154.3,30,3223,40,3291,41.7C3360,43,3429,37,3497,35C3565.7,33,3634,37,3703,41.7C3771.4,47,3840,53,3909,61.7C3977.1,70,4046,80,4114,83.3C4182.9,87,4251,83,4320,68.3C4388.6,53,4457,27,4526,15C4594.3,3,4663,7,4731,21.7C4800,37,4869,63,4903,76.7L4937.1,90L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
-        </path>
-    </svg>
-    <section style="background-color: #b1b4b9">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <hr>
-                    <h3 class="mb-4">Social Media</h3>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center justify-content-md-start">
                         <a href="https://www.facebook.com/zikra.zana.5?mibextid=ZbWKwL" target="_blank"
-                            class="mx-2"><img src="img/facebook_icon.png" alt="Facebook" width="50"
+                            class="me-3"><img src="img/facebook_icon.png" alt="Facebook" width="35"
                                 class="mb-3 hoover"></a>
                         <a href="https://www.instagram.com/zikrazana_?igsh=MTgzczR5a3VoeG16bg==" target="_blank"
-                            class="mx-2"><img src="img/instagram_icon.png" alt="Instagram" width="50"
+                            class="me-3"><img src="img/instagram_icon.png" alt="Instagram" width="35"
                                 class="mb-3 hoover"></a>
-                        <a href="https://www.linkedin.com/in/zikra-zana-b4964b2b4/" target="_blank" class="mx-2"><img
-                                src="img/linkedin_icon.png" alt="LinkedIn" width="50" class="mb-3 hoover"></a>
-                        <a href="https://github.com/MonoZikk" target="_blank" class="mx-2"><img
-                                src="img/github_icon.png" alt="GitHub" width="50" class="mb-3 hoover"></a>
+                        <a href="https://www.linkedin.com/in/zikra-zana-b4964b2b4/" target="_blank" class="me-3"><img
+                                src="img/linkedin_icon.png" alt="LinkedIn" width="35" class="mb-3 hoover"></a>
+                        
                     </div>
-                    <hr class="mt-4">
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <h1 class="text-center text-white mb-4 fs-2 fs-md-1" style="color: #A7C7E7;">Tentang Saya</h1>
+                    <div class="text-center px-2">
+                        <div class="d-inline-block px-3 px-md-4 py-2 rounded"
+                            style="background: rgba(167, 199, 231, 0.1);">
+                            <span class="text-white fs-6">Saya adalah seorang mahasiswa Sistem Informasi yang antusias
+                                pada
+                                bidang Web Development. Saya
+                                memiliki ketertarikan terhadap pemrograman yang berkaitan dengan bidang Web Development,
+                                seperti
+                                Javascript, PHP, Framework dan lainnya. Selain itu, saya juga sedang mempelajari basic
+                                Design
+                                UI/UX Figma untuk membantu dalam pembuatan website saya.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Profil End -->
 
-    <!-- Social Media End -->
+    <section class="p-3 text-center align-items-center mb-4 mb-md-5 section-mobile">
+        <h1 class="text-white lilita-one-regular" style="font-size: 35px; font-size: clamp(35px, 5vw, 50px);">My Skill
+        </h1>
+        <hr class="hr-mobile text-center mx-auto" width="400px" style="border-color: #A7C7E7; margin-top: -5px; border-width: 2px;">
+    </section>
 
+    <section class="p-3 pb-5 section-mobile1" style="background: #121212;">
+        <div class="container text-white">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-5 mb-4 mb-md-0">
+                    <h2 class="text-center">Soft SKill</h2>
+                    <hr class="text-center mx-auto" width="200px" style="border-color: #A7C7E7; margin-top: -5px;">
+                    <i class="fab fa-html5 fs-4" style="color: #ff5722;"></i>
+                    <div>HTML</div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px;">
+                            <div class="progress-bar" style="width: 95%; background-color: #00d8ff;"></div>
+                        </div>
+                        <span>95%</span>
+                    </div>
+                    <i class="fa-brands fs-4 fa-css3-alt" style="color: #74C0FC;"></i>
+                    <div>CSS</div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                            <div class="progress-bar" style="width: 70%; background-color: #00d8ff;"></div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                    <i class="fa-brands fs-4 fa-js" style="color: #FFD43B;"></i>
+                    <div>Javascript</div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                            <div class="progress-bar" style="width: 20%; background-color: #00d8ff;"></div>
+                        </div>
+                        <span>20%</span>
+                    </div>
+                    <i class="fa-brands fs-4 fa-php" style="color: #74C0FC;"></i>
+                    <div>PHP (Native)</div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                            <div class="progress-bar" style="width: 90%; background-color: #00d8ff;"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                    <i class="fa-brands fs-4 fa-bootstrap" style="color: #B197FC;"></i>
+                    <div>Bootstrap</div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                            <div class="progress-bar" style="width: 85%; background-color: #00d8ff;"></div>
+                        </div>
+                        <span>85%</span>
+                    </div>
+
+                    <img src="img/chatgpt.png" width="25px" alt="">
+                    <div>ChatGPT</div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                            <div class="progress-bar" style="width: 100%; background-color: #00d8ff;"></div>
+                        </div>
+                        <span>100%</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <h2 class="text-center">Hard Skill</h2>
+                    <hr class="text-center mx-auto" width="200px" style="border-color: #A7C7E7; margin-top: -5px;">
+                    <div class="container d-flex flex-wrap justify-content-around align-items-center mt-4 mb-5">
+                        <div class="progress-circle mb-4" data-percentage="70">
+                            <span>70%</span>
+                            <p>Kreatifitas</p>
+                        </div>
+                        <div class="progress-circle mb-4" data-percentage="80">
+                            <span>80%</span>
+                            <p>Komunikasi</p>
+                        </div>
+                    </div>
+                    <div class="container d-flex flex-wrap justify-content-around align-items-center mt-2">
+                        <div class="progress-circle mb-4" data-percentage="95">
+                            <span>95%</span>
+                            <p>Problem Solve</p>
+                        </div>
+                        <div class="progress-circle mb-4" data-percentage="85">
+                            <span>85%</span>
+                            <p>Team Work</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('.progress-circle').forEach(circle => {
+            const percentage = circle.getAttribute('data-percentage');
+            circle.style.setProperty('--percentage', percentage);
+        });
+    </script>
+
 </body>
 
 </html>
