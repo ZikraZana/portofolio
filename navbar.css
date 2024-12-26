@@ -1,0 +1,57 @@
+.container.shadoww {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 1200px) {
+    .container.shadoww {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+
+  }
+
+  @media (max-width: 992px) {
+    .container.shadoww {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+
+  }
+
+  @media (max-width: 768px) {
+    .container.shadoww {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+    }
+
+    .size {
+      font-size: 1.0rem;
+    }
+
+  }
+
+  @media (max-width: 576px) {
+    .container.shadoww {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+
+    .nav-link {
+      font-size: 0.8rem;
+    }
+
+    .size {
+      font-size: 1.0rem;
+    }
+  }
