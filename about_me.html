@@ -78,11 +78,12 @@
             .mobile-content {
                 margin-top: 100px !important;
             }
-            
-            .section-mobile{
+
+            .section-mobile {
                 display: none;
             }
-            .section-mobile1{
+
+            .section-mobile1 {
                 margin-top: 50px;
             }
         }
@@ -92,10 +93,24 @@
             .mobile-content {
                 margin-top: 20px;
             }
-            .hr-mobile{
+
+            .hr-mobile {
                 width: 300px;
             }
         }
+
+        html,
+        body {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        html::-webkit-scrollbar,
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        
     </style>
 
 </head>
@@ -117,7 +132,7 @@
                         <a class="nav-link active text-decoration-underline" href="about_me.html">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portofolio</a>
+                        <a class="nav-link" href="past_project.html">Portofolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -130,8 +145,9 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://github.com/MonoZikk" target="_blank"><img src="img/github_icon.png"
-                                class="img-fluid rounded-circle" alt="..." width="40px"></a>
+                        <a class="nav-link active" aria-current="page" href="https://github.com/MonoZikk"
+                            target="_blank"><img src="img/github_icon.png" class="img-fluid rounded-circle" alt="..."
+                                width="40px"></a>
                     </li>
                     <li class="nav-item">
                         <svg class="bi" width="70" height="-20px">
@@ -154,14 +170,13 @@
                 <div class="navbar-collapse">
                     <ul class="navbar-nav mx-auto d-flex flex-row justify-content-center">
                         <li class="nav-item mx-2">
-                            <a class="size nav-link" aria-current="page"
-                                href="portofolio.html">Home</a>
+                            <a class="size nav-link" aria-current="page" href="portofolio.html">Home</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="size nav-link active text-decoration-underline" href="about_me.html">About Me</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="size nav-link" href="#">Portofolio</a>
+                            <a class="size nav-link" href="past_project.html">Portofolio</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="size nav-link" href="#">Blog</a>
@@ -174,164 +189,173 @@
     <!-- end of navbar -->
 
     <!-- Profil -->
-    <section class="mobile-content d-flex align-items-center p-3 p-md-5 min-vh-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 text-white d-flex justify-content-center align-items-center mb-4 mb-md-0">
-                    <div class="position-relative">
-                        <img src="img/Foto diri.jpg" class="img-fluid rounded-circle shadow-lg" alt="Zikra Zana"
-                            style="max-width: 200px; width: 100%; border: 4px solid #A7C7E7;" />
-                        <div class="position-absolute bottom-0 end-0">
+    
+
+
+        <section class="mobile-content d-flex align-items-center p-3 p-md-5 min-vh-100">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-12 col-md-6 text-white d-flex justify-content-center align-items-center mb-4 mb-md-0">
+                        <div class="position-relative">
+                            <img src="img/Foto diri.jpg" class="img-fluid rounded-circle shadow-lg" alt="Zikra Zana"
+                                style="max-width: 200px; width: 100%; border: 4px solid #A7C7E7;" />
+                            <div class="position-absolute bottom-0 end-0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-white text-center text-md-start">
+                        <h1 class="display-5 display-md-4 fw-bold mb-2" style="color: #A7C7E7;">Zikra Zana</h1>
+                        <hr class="my-3 mx-auto mx-md-0"
+                            style="width: 250px; max-width: 100%; border-color: #A7C7E7; opacity: 0.5;">
+                        <h4 class="text-light mb-4"><span class="typing-text">Web Developer Enthusiast</span></h4>
+
+                        <div class="d-flex justify-content-center justify-content-md-start">
+                            <a href="https://www.facebook.com/zikra.zana.5?mibextid=ZbWKwL" target="_blank"
+                                class="me-3"><img src="img/facebook_icon.png" alt="Facebook" width="35"
+                                    class="mb-3 hoover"></a>
+                            <a href="https://www.instagram.com/zikrazana_?igsh=MTgzczR5a3VoeG16bg==" target="_blank"
+                                class="me-3"><img src="img/instagram_icon.png" alt="Instagram" width="35"
+                                    class="mb-3 hoover"></a>
+                            <a href="https://www.linkedin.com/in/zikra-zana-b4964b2b4/" target="_blank"
+                                class="me-3"><img src="img/linkedin_icon.png" alt="LinkedIn" width="35"
+                                    class="mb-3 hoover"></a>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 text-white text-center text-md-start">
-                    <h1 class="display-5 display-md-4 fw-bold mb-2" style="color: #A7C7E7;">Zikra Zana</h1>
-                    <hr class="my-3 mx-auto mx-md-0"
-                        style="width: 250px; max-width: 100%; border-color: #A7C7E7; opacity: 0.5;">
-                    <h4 class="text-light mb-4"><span class="typing-text">Web Developer Enthusiast</span></h4>
-
-                    <div class="d-flex justify-content-center justify-content-md-start">
-                        <a href="https://www.facebook.com/zikra.zana.5?mibextid=ZbWKwL" target="_blank"
-                            class="me-3"><img src="img/facebook_icon.png" alt="Facebook" width="35"
-                                class="mb-3 hoover"></a>
-                        <a href="https://www.instagram.com/zikrazana_?igsh=MTgzczR5a3VoeG16bg==" target="_blank"
-                            class="me-3"><img src="img/instagram_icon.png" alt="Instagram" width="35"
-                                class="mb-3 hoover"></a>
-                        <a href="https://www.linkedin.com/in/zikra-zana-b4964b2b4/" target="_blank" class="me-3"><img
-                                src="img/linkedin_icon.png" alt="LinkedIn" width="35" class="mb-3 hoover"></a>
-                        
+                <div class="row mt-4 mt-md-5">
+                    <div class="col-12">
+                        <h1 class="text-center text-white mb-4 fs-2 fs-md-1" style="color: #A7C7E7;">Tentang Saya</h1>
+                        <div class="text-center px-2">
+                            <div class="d-inline-block px-3 px-md-4 py-2 rounded"
+                                style="background: rgba(167, 199, 231, 0.1);">
+                                <span class="text-white fs-6">Saya adalah seorang mahasiswa Sistem Informasi yang
+                                    antusias
+                                    pada
+                                    bidang Web Development. Saya
+                                    memiliki ketertarikan terhadap pemrograman yang berkaitan dengan bidang Web
+                                    Development,
+                                    seperti
+                                    Javascript, PHP, Framework dan lainnya. Selain itu, saya juga sedang mempelajari
+                                    basic
+                                    Design
+                                    UI/UX Figma untuk membantu dalam pembuatan website saya.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-4 mt-md-5">
-                <div class="col-12">
-                    <h1 class="text-center text-white mb-4 fs-2 fs-md-1" style="color: #A7C7E7;">Tentang Saya</h1>
-                    <div class="text-center px-2">
-                        <div class="d-inline-block px-3 px-md-4 py-2 rounded"
-                            style="background: rgba(167, 199, 231, 0.1);">
-                            <span class="text-white fs-6">Saya adalah seorang mahasiswa Sistem Informasi yang antusias
-                                pada
-                                bidang Web Development. Saya
-                                memiliki ketertarikan terhadap pemrograman yang berkaitan dengan bidang Web Development,
-                                seperti
-                                Javascript, PHP, Framework dan lainnya. Selain itu, saya juga sedang mempelajari basic
-                                Design
-                                UI/UX Figma untuk membantu dalam pembuatan website saya.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Profil End -->
+        </section>
+        <!-- Profil End -->
 
-    <section class="p-3 text-center align-items-center mb-4 mb-md-5 section-mobile">
-        <h1 class="text-white lilita-one-regular" style="font-size: 35px; font-size: clamp(35px, 5vw, 50px);">My Skill
-        </h1>
-        <hr class="hr-mobile text-center mx-auto" width="400px" style="border-color: #A7C7E7; margin-top: -5px; border-width: 2px;">
-    </section>
+        <section class="p-3 text-center align-items-center mb-4 mb-md-5 div-mobile">
+            <h1 class="text-white lilita-one-regular" style="font-size: 35px; font-size: clamp(35px, 5vw, 50px);">My
+                Skill
+            </h1>
+            <hr class="hr-mobile text-center mx-auto" width="400px"
+                style="border-color: #A7C7E7; margin-top: -5px; border-width: 2px;">
+        </section>
 
-    <section class="p-3 pb-5 section-mobile1" style="background: #121212;">
-        <div class="container text-white">
-            <div class="row justify-content-between">
-                <div class="col-12 col-md-5 mb-4 mb-md-0">
-                    <h2 class="text-center">Soft SKill</h2>
-                    <hr class="text-center mx-auto" width="200px" style="border-color: #A7C7E7; margin-top: -5px;">
-                    <i class="fab fa-html5 fs-4" style="color: #ff5722;"></i>
-                    <div>HTML</div>
-                    <div class="d-flex align-items-center">
-                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
-                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px;">
-                            <div class="progress-bar" style="width: 95%; background-color: #00d8ff;"></div>
-                        </div>
-                        <span>95%</span>
-                    </div>
-                    <i class="fa-brands fs-4 fa-css3-alt" style="color: #74C0FC;"></i>
-                    <div>CSS</div>
-                    <div class="d-flex align-items-center">
-                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
-                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
-                            <div class="progress-bar" style="width: 70%; background-color: #00d8ff;"></div>
-                        </div>
-                        <span>70%</span>
-                    </div>
-                    <i class="fa-brands fs-4 fa-js" style="color: #FFD43B;"></i>
-                    <div>Javascript</div>
-                    <div class="d-flex align-items-center">
-                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
-                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
-                            <div class="progress-bar" style="width: 20%; background-color: #00d8ff;"></div>
-                        </div>
-                        <span>20%</span>
-                    </div>
-                    <i class="fa-brands fs-4 fa-php" style="color: #74C0FC;"></i>
-                    <div>PHP (Native)</div>
-                    <div class="d-flex align-items-center">
-                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
-                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
-                            <div class="progress-bar" style="width: 90%; background-color: #00d8ff;"></div>
-                        </div>
-                        <span>90%</span>
-                    </div>
-                    <i class="fa-brands fs-4 fa-bootstrap" style="color: #B197FC;"></i>
-                    <div>Bootstrap</div>
-                    <div class="d-flex align-items-center">
-                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
-                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
-                            <div class="progress-bar" style="width: 85%; background-color: #00d8ff;"></div>
-                        </div>
-                        <span>85%</span>
-                    </div>
-
-                    <img src="img/chatgpt.png" width="25px" alt="">
-                    <div>ChatGPT</div>
-                    <div class="d-flex align-items-center">
-                        <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
-                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
-                            <div class="progress-bar" style="width: 100%; background-color: #00d8ff;"></div>
-                        </div>
-                        <span>100%</span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-5">
-                    <h2 class="text-center">Hard Skill</h2>
-                    <hr class="text-center mx-auto" width="200px" style="border-color: #A7C7E7; margin-top: -5px;">
-                    <div class="container d-flex flex-wrap justify-content-around align-items-center mt-4 mb-5">
-                        <div class="progress-circle mb-4" data-percentage="70">
-                            <span>70%</span>
-                            <p>Kreatifitas</p>
-                        </div>
-                        <div class="progress-circle mb-4" data-percentage="80">
-                            <span>80%</span>
-                            <p>Komunikasi</p>
-                        </div>
-                    </div>
-                    <div class="container d-flex flex-wrap justify-content-around align-items-center mt-2">
-                        <div class="progress-circle mb-4" data-percentage="95">
+        <section class="p-3 pb-5 section-mobile1" style="background: #121212;">
+            <div class="container text-white">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-5 mb-4 mb-md-0">
+                        <h2 class="text-center">Hard SKill</h2>
+                        <hr class="text-center mx-auto" width="200px" style="border-color: #A7C7E7; margin-top: -5px;">
+                        <i class="fab fa-html5 fs-4" style="color: #ff5722;"></i>
+                        <div>HTML</div>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px;">
+                                <div class="progress-bar" style="width: 95%; background-color: #00d8ff;"></div>
+                            </div>
                             <span>95%</span>
-                            <p>Problem Solve</p>
                         </div>
-                        <div class="progress-circle mb-4" data-percentage="85">
+                        <i class="fa-brands fs-4 fa-css3-alt" style="color: #74C0FC;"></i>
+                        <div>CSS</div>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                                <div class="progress-bar" style="width: 70%; background-color: #00d8ff;"></div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+                        <i class="fa-brands fs-4 fa-js" style="color: #FFD43B;"></i>
+                        <div>Javascript</div>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                                <div class="progress-bar" style="width: 20%; background-color: #00d8ff;"></div>
+                            </div>
+                            <span>20%</span>
+                        </div>
+                        <i class="fa-brands fs-4 fa-php" style="color: #74C0FC;"></i>
+                        <div>PHP (Native)</div>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                                <div class="progress-bar" style="width: 90%; background-color: #00d8ff;"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                        <i class="fa-brands fs-4 fa-bootstrap" style="color: #B197FC;"></i>
+                        <div>Bootstrap</div>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                                <div class="progress-bar" style="width: 85%; background-color: #00d8ff;"></div>
+                            </div>
                             <span>85%</span>
-                            <p>Team Work</p>
+                        </div>
+
+                        <img src="img/chatgpt.png" width="25px" alt="">
+                        <div>ChatGPT</div>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1 me-2" role="progressbar" aria-label="Success example"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 7px; ">
+                                <div class="progress-bar" style="width: 100%; background-color: #00d8ff;"></div>
+                            </div>
+                            <span>100%</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h2 class="text-center">Soft Skill</h2>
+                        <hr class="text-center mx-auto" width="200px" style="border-color: #A7C7E7; margin-top: -5px;">
+                        <div class="container d-flex flex-wrap justify-content-around align-items-center mt-4 mb-5">
+                            <div class="progress-circle mb-4" data-percentage="70">
+                                <span>70%</span>
+                                <p>Kreatifitas</p>
+                            </div>
+                            <div class="progress-circle mb-4" data-percentage="80">
+                                <span>80%</span>
+                                <p>Komunikasi</p>
+                            </div>
+                        </div>
+                        <div class="container d-flex flex-wrap justify-content-around align-items-center mt-2">
+                            <div class="progress-circle mb-4" data-percentage="95">
+                                <span>95%</span>
+                                <p>Problem Solve</p>
+                            </div>
+                            <div class="progress-circle mb-4" data-percentage="85">
+                                <span>85%</span>
+                                <p>Team Work</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 
-    <script>
-        document.querySelectorAll('.progress-circle').forEach(circle => {
-            const percentage = circle.getAttribute('data-percentage');
-            circle.style.setProperty('--percentage', percentage);
-        });
-    </script>
-
+        <script>
+            document.querySelectorAll('.progress-circle').forEach(circle => {
+                const percentage = circle.getAttribute('data-percentage');
+                circle.style.setProperty('--percentage', percentage);
+            });
+        </script>
 </body>
 
 </html>
