@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="scroolbar.css">
     <style>
         .poppins-regular {
             font-family: "Poppins", serif;
@@ -76,7 +76,7 @@
 
         @media (max-width: 768px) {
             .mobile-content {
-                margin-top: 100px !important;
+                margin-top: 50px !important;
             }
 
             .section-mobile {
@@ -85,7 +85,9 @@
 
             .section-mobile1 {
                 margin-top: 50px;
+                margin-bottom: 120px;
             }
+
         }
 
         /* Large devices */
@@ -97,20 +99,9 @@
             .hr-mobile {
                 width: 300px;
             }
-        }
 
-        html,
-        body {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
+            
         }
-
-        html::-webkit-scrollbar,
-        body::-webkit-scrollbar {
-            display: none;
-        }
-
-        
     </style>
 
 </head>
@@ -189,10 +180,8 @@
     <!-- end of navbar -->
 
     <!-- Profil -->
-    
-
-
-        <section class="mobile-content d-flex align-items-center p-3 p-md-5 min-vh-100">
+    <div class="scrool-content" style="margin-top: 3rem;">
+        <section class="mobile-content d-flex align-items-center p-md-5 min-vh-100" style="margin-top: -70px;">
             <div class="container">
                 <div class="row">
                     <div
@@ -346,16 +335,17 @@
                 </div>
             </div>
         </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
-        <script>
-            document.querySelectorAll('.progress-circle').forEach(circle => {
-                const percentage = circle.getAttribute('data-percentage');
-                circle.style.setProperty('--percentage', percentage);
-            });
-        </script>
+    <script>
+        document.querySelectorAll('.progress-circle').forEach(circle => {
+            const percentage = circle.getAttribute('data-percentage');
+            circle.style.setProperty('--percentage', percentage);
+        });
+    </script>
 </body>
 
 </html>
